@@ -3,12 +3,15 @@
 const formulario = document.querySelector('form');
 const send = document.getElementById('send');
 const info = document.getElementById('info');
+const head = document.getElementById('head');
 
 info.style.display = 'none'
 
 // DECLARACION DE FUNCIONES
 const consultarPais = async (e) => {
      e.preventDefault();
+
+    head.style.display = 'none';
 
     let name = document.getElementById('name').value.trim()
     
